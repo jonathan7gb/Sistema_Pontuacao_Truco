@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: clamp(0.6em, 3vw, 1.2em);
+    width: 100%;
+}
+
+header h1{
+    padding: 20px 15px;
+}
+
+/* =---------------------------= */
+
+#containerPontuacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8%;
+    text-align: center;
+    width: 100%;
+}
+
+#pontuacaoTimeA{
+    border-right: 1px solid white;  
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#pontuacaoTimeB{
+    border-left: 1px solid white;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pontuacaoA{
+    font-size: clamp(3.5em, 5vw, 3.8em);
+    color: white;
+    padding: 20px 0;
+}
+
+#pontuacaoB{
+    font-size: clamp(3.5em, 5vw, 3.8em);
+    color: white;
+    padding: 20px 0;
+}
+
+
+#tituloA {
+    color: #06923E;
+}
+
+#tituloB{
+    color: #5EABD6 ;
+}
+
+#addPontosA{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "maisUm maisUm maisUm maisUm"
+    "maisTres maisSeis maisNove maisDoze"
+    "zerar zerar zerar zerar"
+    ;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+#addPontosA button{
+    font-size: 15px;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #6ebb8d;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#addPontosA #maisUmA{
+    grid-area: maisUm;
+    padding: 15px 5px;
+}
+#addPontosA #zerarA{
+    grid-area: zerar;
+    background-color: #06923E;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1.3em, 3vw, 1.5em);
+}
+
+#addPontosB{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "maisUm maisUm maisUm maisUm"
+    "maisTres maisSeis maisNove maisDoze"
+    "zerar zerar zerar zerar"
+    ;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+#addPontosB button{
+    font-size: 15px;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #9fc9dd;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#addPontosB #maisUmB{
+    grid-area: maisUm;
+    padding: 15px 5px;
+}
+
+#addPontosB #zerarB{
+    grid-area: zerar;
+    background-color: #5EABD6;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1.3em, 3vw, 1.5em);
+}
+
+#totalVitoriasA, #totalVitoriasB{
+    margin-top: 20px;
+}
+
+#totalVitoriasA{
+    color: #06923E;
+    font-size: clamp(1.5em, 3vw, 2em);
+    border-top: 1px solid white;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+#totalVitoriasB{
+    color: #5EABD6;
+    font-size: clamp(1.5em, 3vw, 2em);
+    border-top: 1px solid white;
+    padding-top: 40px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+#zerarVitoriasA{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #06923E;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: clamp(1.3em, 3vw, 1.5em);
+    margin-top: 40px;
+}
+
+#zerarVitoriasB{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #5EABD6;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: clamp(1.3em, 3vw, 1.5em);
+    margin-top: 40px;
+}
+
+/* =-------------------------------= */
+
+#nomeGrupos{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+    "nomeA nomeB"
+    "salvar salvar";
+    padding: 10px;
+}
+
+#forms input{
+    border: 0;
+    padding: 10px 5px;
+        font-weight: 600;
+}
+
+#forms #NomeTimeA{
+    grid-area: nomeA;
+    border-top-left-radius: 5px;
+}
+
+#forms #NomeTimeB{
+    grid-area: nomeB;
+    border-top-right-radius: 5px;
+}
+
+#forms button{
+    grid-area: salvar;
+    background-color: #06923E;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

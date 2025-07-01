@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♣️ Truco da Galera ♦️</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./truco.png">
+</head>
+<body>
+    <header>
+        <h1>♦️ PONTUAÇÃO TRUCO ♣️</h1>
+    </header>
+    <main>
+        <div id="containerPontuacoes">
+            <div id="pontuacaoTimeA">
+                <h1 id="tituloA">Time A</h1>
+                <h1 id="pontuacaoA">0</h1>
+                
+                <div id="addPontosA">
+                    <button id="maisUmA">+1</button>
+                    <button id="maisTresA">+3</button>
+                    <button id="maisSeisA">+6</button>
+                    <button id="maisNoveA">+9</button>
+                    <button id="maisDozeA">+12</button>
+                    <button id="zerarA">Zerar</button>
+                </div>
+                <p id="totalVitoriasA">🏆: 0</p>
+                <button id="zerarVitoriasA">Zerar Vitórias</button>
+            </div>
+            
+            <div id="pontuacaoTimeB">
+                <h1 id="tituloB">Time B</h1>
+                <h1 id="pontuacaoB">0</h1>
+                
+                <div id="addPontosB">
+                    <button id="maisUmB">+1</button>
+                    <button id="maisTresB">+3</button>
+                    <button id="maisSeisB">+6</button>
+                    <button id="maisNoveB">+9</button>
+                    <button id="maisDozeB">+12</button>
+                    <button id="zerarB">Zerar</button>
+                </div>
+                <p id="totalVitoriasB">🏆: 0</p>
+                <button id="zerarVitoriasB">Zerar Vitórias</button>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <section id="nomeGrupos">
+            <h2>Nome dos Times</h2>
+            <div class="formularioNomes">
+                <form action="#" method="post" id="forms">
+                    <input type="text" id="NomeTimeA" placeholder="Nome do Time A">
+                    <input type="text" id="NomeTimeB" placeholder="Nome do Time B">
+                    <button type="button" onclick="atualizarTitulos()">Salvar Nomes</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
