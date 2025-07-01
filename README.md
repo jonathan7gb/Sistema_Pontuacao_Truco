@@ -10,10 +10,10 @@
    ```
     
    ```bash
-   git clone https://github.com/jonathan7gb/Aluguel-Veiculos-Sistema.git
+   git clone https://github.com/jonathan7gb/Sistema_Pontuacao_Truco.git
    ```
    
    ```bash
-   cd Aluguel-Veiculos-Sistema
+   cd Sistema_Pontuacao_Truco
    ```
 2. Acesse a pasta do projeto e abra o arquivo ``index.html``.
