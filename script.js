@@ -36,12 +36,43 @@ var totalB =  0;
 const bodyzao = document.getElementById("body");
 const tituHeader = document.getElementById("tituloHeader");
 const btnTema = document.getElementById("tema");
+const header = document.getElementById("header");
+const nomeTimes = document.getElementById("nomeTimes");
+const SalvarNomes = document.getElementById("SalvarNomes");
+const containerTema = document.getElementById("containerTema");
+bodyzao.style.backgroundColor = "black";
 
-function mudarTema(){
-    btnTema.addEventListener("click", () => {
+btnTema.addEventListener("click", () => {
+    if(bodyzao.style.backgroundColor === "black"){
+        bodyzao.style.backgroundColor = "white";
+        tituHeader.style.color = "black";
+        btnTema.style.backgroundColor = "black";
+        btnTema.style.color = "white";
+        header.style.borderBottom = "1px solid black";
+        pontA.style.color = "#06923E";
+        pontB.style.color = "#5EABD6";
+        nomeTimes.style.color = "black";
+        nomeTimeA.style.border = "1px solid black";
+        nomeTimeB.style.border = "1px solid black";
+        SalvarNomes.style.border = "1px solid black";
+        containerTema.style.borderTop = "1px solid black";
+        totalVitA.style.borderTop = "1px solid black";
+        totalVitB.style.borderTop = "1px solid black";
+    }else{
+        bodyzao.style.backgroundColor = "black";
+        tituHeader.style.color = "white";
+        btnTema.style.backgroundColor = "white";
+        btnTema.style.color = "black";
+        header.style.borderBottom = "1px solid white";
+        pontA.style.color = "white";
+        pontB.style.color = "white";
+        nomeTimes.style.color = "white";
+        containerTema.style.borderTop = "1px solid white";
+        totalVitA.style.borderTop = "1px solid white";
+        totalVitB.style.borderTop = "1px solid white";
+    }
+});
 
-    });
-}
 
 btnM1A.addEventListener("click", () => {
     pontosA++;
@@ -146,8 +177,13 @@ zerarVitB.addEventListener("click", () => {
 //----------------------
 
 function verificarVencedor(){
-    pontA.style.color = "white";
-    pontB.style.color = "white";
+    if(bodyzao.style.backgroundColor === "white"){
+        pontA.style.color = "#06923E";
+        pontB.style.color = "#5EABD6";
+    }else{
+        pontA.style.color = "white";
+        pontB.style.color = "white";
+    }
     tituA.style.color = "#06923E";
     tituB.style.color = "#5EABD6";
 

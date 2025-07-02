@@ -70,7 +70,7 @@ main{
 }
 
 #tituloB{
-    color: #5EABD6 ;
+    color: #5EABD6;
 }
 
 #addPontosA{
@@ -404,6 +404,7 @@ main{
     font-size: 16px;
     margin-top: 7%;
     margin-bottom: 7%;
+    cursor: pointer;
 }
 
 

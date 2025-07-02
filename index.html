@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./truco.png">
 </head>
-<body>
-    <header>
+<body id="body">
+    <header id="header">
         <h1 id="tituloHeader">♦️ PONTUAÇÃO TRUCO ♣️</h1>
     </header>
 
     <main>
     <section id="nomeGrupos">
-        <h2>Nome dos Times</h2>
+        <h2 id="nomeTimes">Nome dos Times</h2>
         <div class="formularioNomes">
             <form action="#" method="post" id="forms">
                 <input type="text" id="NomeTimeA" placeholder="Nome do Time A">
                 <input type="text" id="NomeTimeB" placeholder="Nome do Time B">
-                <button type="button" onclick="atualizarTitulos()">Salvar Nomes</button>
+                <button type="button" onclick="atualizarTitulos()" id="SalvarNomes">Salvar Nomes</button>
             </form>
         </div>
     </section>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div id="containerTema">
-            <button type="button" id="tema" onclick="mudarTema()">☀️ Mudar Tema 🌙</button>
+            <button type="button" id="tema">☀️ Mudar Tema 🌙</button>
         </div>
     </main>
 
