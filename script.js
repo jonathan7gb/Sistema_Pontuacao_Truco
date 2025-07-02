@@ -41,6 +41,7 @@ function mudarTema(){
     btnTema.addEventListener("click", () => {
 
     });
+}
 
 btnM1A.addEventListener("click", () => {
     pontosA++;
