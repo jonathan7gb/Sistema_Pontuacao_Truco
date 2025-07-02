@@ -32,6 +32,15 @@ const imagemPerdeuB = document.getElementById("imagemPerdeuB");
 var pontosB =  0;
 var totalB =  0;
 
+//Tema Escuro/claro
+const bodyzao = document.getElementById("body");
+const tituHeader = document.getElementById("tituloHeader");
+const btnTema = document.getElementById("tema");
+
+function mudarTema(){
+    btnTema.addEventListener("click", () => {
+
+    });
 
 btnM1A.addEventListener("click", () => {
     pontosA++;
