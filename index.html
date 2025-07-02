@@ -11,7 +11,19 @@
     <header>
         <h1>♦️ PONTUAÇÃO TRUCO ♣️</h1>
     </header>
+
     <main>
+    <section id="nomeGrupos">
+        <h2>⮮ Nome dos Times ⮯</h2>
+        <div class="formularioNomes">
+            <form action="#" method="post" id="forms">
+                <input type="text" id="NomeTimeA" placeholder="Nome do Time A">
+                <input type="text" id="NomeTimeB" placeholder="Nome do Time B">
+                <button type="button" onclick="atualizarTitulos()">Salvar Nomes</button>
+            </form>
+        </div>
+    </section>
+
         <div id="containerPontuacoes">
             <div id="pontuacaoTimeA">
                 <h1 id="tituloA">Time A</h1>
@@ -48,17 +60,6 @@
                 <br>
             </div>
         </div>
-
-        <section id="nomeGrupos">
-            <h2>Nome dos Times</h2>
-            <div class="formularioNomes">
-                <form action="#" method="post" id="forms">
-                    <input type="text" id="NomeTimeA" placeholder="Nome do Time A">
-                    <input type="text" id="NomeTimeB" placeholder="Nome do Time B">
-                    <button type="button" onclick="atualizarTitulos()">Salvar Nomes</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <script src="./script.js"></script>

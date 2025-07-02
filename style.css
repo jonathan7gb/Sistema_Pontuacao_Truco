@@ -84,11 +84,12 @@ header h1{
     font-size: 15px;
     border: 0;
     padding: 5px;
-    border-radius: 5px;
-    background-color: #6ebb8d;
+    border-radius: 3px;
+    background-color: #95d4ae;
     color: black;
     font-weight: 600;
     cursor: pointer;
+    box-shadow: 3px 3px 10px #6ebb8d67;
 }
 
 #addPontosA #maisUmA{
@@ -101,6 +102,7 @@ header h1{
     color: white;
     font-weight: 600;
     font-size: clamp(1.3em, 3vw, 1.5em);
+    box-shadow: 3px 3px 10px #6ebb8d67;
 }
 
 #addPontosB{
@@ -120,11 +122,12 @@ header h1{
     font-size: 15px;
     border: 0;
     padding: 5px;
-    border-radius: 5px;
-    background-color: #9fc9dd;
+    border-radius: 3px;
+    background-color: #b7d7e5;
     color: black;
     font-weight: 600;
     cursor: pointer;
+    box-shadow: 3px 3px 10px #9fc9dd85;
 }
 
 #addPontosB #maisUmB{
@@ -138,6 +141,7 @@ header h1{
     color: white;
     font-weight: 600;
     font-size: clamp(1.3em, 3vw, 1.5em);
+    box-shadow: 3px 3px 10px #9fc9dd85;
 }
 
 #totalVitoriasA, #totalVitoriasB{
@@ -165,7 +169,7 @@ header h1{
 #zerarVitoriasA{
     width: 100%;
     border: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #06923E;
     color: #ffffff;
     padding: 10px 5px;
@@ -173,12 +177,13 @@ header h1{
     font-weight: 600;
     font-size: clamp(1.3em, 3vw, 1.5em);
     margin-top: 40px;
+    box-shadow: 3px 3px 10px #6ebb8d67;
 }
 
 #zerarVitoriasB{
     width: 100%;
     border: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #5EABD6;
     color: #ffffff;
     padding: 10px 5px;
@@ -186,6 +191,7 @@ header h1{
     font-weight: 600;
     font-size: clamp(1.3em, 3vw, 1.5em);
     margin-top: 40px;
+    box-shadow: 3px 3px 10px #9fc9dd85;
 }
 
 /* =-------------------------------= */
@@ -219,20 +225,46 @@ header h1{
 
 #forms #NomeTimeA{
     grid-area: nomeA;
-    border-top-left-radius: 5px;
+    border-top-left-radius: 3px;
 }
 
 #forms #NomeTimeB{
     grid-area: nomeB;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 3px;
 }
 
 #forms button{
     grid-area: salvar;
     background-color: #06923E;
     border: 0;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 3px 3px 10px #6ebb8d67;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+
+@media (min-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    
+    #nomeGrupos{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #containerPontuacoes{
+        margin-top: 3%;
+        width: 50vw;
+    }
 }
