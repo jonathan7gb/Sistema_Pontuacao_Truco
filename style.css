@@ -92,6 +92,11 @@ main{
 button{
     font-family: 'Bebas Neue', sans-serif !important;
     letter-spacing: 3px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.01);
 }
 
 #addPontosA button{
@@ -271,11 +276,11 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 8px;
+    gap: 5px;
     grid-template-areas: 
     "nomeA nomeB"
     "salvar salvar";
-    padding: 10px;
+    padding: 3%;
 }
 
 #forms input{
@@ -336,6 +341,7 @@ button{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 #imagemPerdeuA{
@@ -353,6 +359,7 @@ button{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 /* --- */
@@ -377,6 +384,7 @@ button{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 #imagemPerdeuB{
@@ -394,6 +402,7 @@ button{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 #containerTema{
@@ -413,6 +422,7 @@ button{
     margin-bottom: 7%;
     cursor: pointer;
 }
+
 
 
 @media (min-width: 1024px){

@@ -58,6 +58,7 @@ btnTema.addEventListener("click", () => {
         containerTema.style.borderTop = "1px solid black";
         totalVitA.style.borderTop = "1px solid black";
         totalVitB.style.borderTop = "1px solid black";
+        btnTema.innerHTML = '<i class="fa-solid fa-moon"></i>ㅤMudar Tema';
     }else{
         bodyzao.style.backgroundColor = "black";
         tituHeader.style.color = "white";
@@ -70,6 +71,7 @@ btnTema.addEventListener("click", () => {
         containerTema.style.borderTop = "1px solid white";
         totalVitA.style.borderTop = "1px solid white";
         totalVitB.style.borderTop = "1px solid white";
+        btnTema.innerHTML = '<i class="fa-solid fa-sun"></i>ㅤMudar Tema';
     }
 });
 
@@ -256,14 +258,14 @@ function verificarVencedor(){
 
 function verificarPrimeiro(){
     if(totalA == totalB){
-        totalVitA.innerText = totalA + "🏆";
-        totalVitB.innerText = totalB + "🏆";
+        totalVitA.innerText = totalA + " 🏆";
+        totalVitB.innerText = totalB + " 🏆";
     }else if(totalA > totalB){
-        totalVitA.innerText = totalA + "🏆";
-        totalVitB.innerText = totalB + "🏆";
+        totalVitA.innerText = totalA + " 🏆";
+        totalVitB.innerText = totalB + " 🏆";
     }else{
-        totalVitA.innerText = totalA + "🏆";
-        totalVitB.innerText = totalB + "🏆";
+        totalVitA.innerText = totalA + " 🏆";
+        totalVitB.innerText = totalB + " 🏆";
     }
 }
 
