@@ -2,6 +2,8 @@
 
 <p>Projeto somente para aprendizado, estou desenvolvendo apenas para recapitular e aprender novos conteúdos. Estou utilizando HTML e CSS para o estruturação e estilização da Página e Javascript como back-end</p>
 
+OBS: Fiz ele para mobile, então a parte desktop pode estar bem estranha e poluída. Porém futuramente irei consertar isso.
+
 ## 📂 Como Executar
 
 1. Clone o repositório:
