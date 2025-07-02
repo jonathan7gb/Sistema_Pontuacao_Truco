@@ -3,12 +3,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: black;
     color: white;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -69,12 +71,13 @@ header h1{
 
 #addPontosA{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "maisUm maisUm maisUm maisUm"
-    "maisTres maisSeis maisNove maisDoze"
-    "zerar zerar zerar zerar"
+    "maisUmA maisUmA "
+    "maisTresA maisSeisA"
+    "maisNoveA maisDozeA"
+    "zerarA zerarA "
     ;
     margin-top: 20px;
     gap: 5px;
@@ -93,11 +96,11 @@ header h1{
 }
 
 #addPontosA #maisUmA{
-    grid-area: maisUm;
+    grid-area: maisUmA;
     padding: 15px 5px;
 }
 #addPontosA #zerarA{
-    grid-area: zerar;
+    grid-area: zerarA;
     background-color: #06923E;
     color: white;
     font-weight: 600;
@@ -107,12 +110,13 @@ header h1{
 
 #addPontosB{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "maisUm maisUm maisUm maisUm"
-    "maisTres maisSeis maisNove maisDoze"
-    "zerar zerar zerar zerar"
+    "maisUmB maisUmB"
+    "maisTresB maisSeisB"
+    "maisNoveB maisDozeB"
+    "zerarB zerarB "
     ;
     margin-top: 20px;
     gap: 5px;
@@ -131,12 +135,24 @@ header h1{
 }
 
 #addPontosB #maisUmB{
-    grid-area: maisUm;
+    grid-area: maisUmB;
     padding: 15px 5px;
+}
+#addPontosB #maisTresB{
+    grid-area: maisTresB;
+}
+#addPontosB #maisSeisB{
+    grid-area: maisSeisB;
+}
+#addPontosB #maisNoveB{
+    grid-area: maisNoveB;
+}
+#addPontosB #maisDozeB{
+    grid-area: maisDozeB;
 }
 
 #addPontosB #zerarB{
-    grid-area: zerar;
+    grid-area: zerarB;
     background-color: #5EABD6;
     color: white;
     font-weight: 600;
@@ -207,12 +223,15 @@ header h1{
     text-align: center;
 }
 
+#nomeGrupos h2{
+    margin-bottom: 5px;
+}
 
 #forms{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5px;
+    gap: 8px;
     grid-template-areas: 
     "nomeA nomeB"
     "salvar salvar";
@@ -221,34 +240,41 @@ header h1{
 
 #forms input{
     border: 0;
-    padding: 10px 5px;
-        font-weight: 600;
+    padding: 10px;
+    font-weight: 600;
 }
 
 #forms #NomeTimeA{
     grid-area: nomeA;
-    border-top-left-radius: 3px;
+    border-top-left-radius: 5px;
+    background-color: white;
 }
 
 #forms #NomeTimeB{
     grid-area: nomeB;
-    border-top-right-radius: 3px;
+    border-top-right-radius: 5px;
+    background-color: white;
 }
 
 #forms button{
     grid-area: salvar;
-    background-color: #06923E;
+    background-color: #b7d7e5;
     border: 0;
     font-size: 17px;
     font-weight: 600;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 3px 3px 10px #6ebb8d67;
     cursor: pointer;
-    color: white;
+    color: black;
     letter-spacing: 1.2px;
+    padding: 1.5%;
 }
 
+#forms button:hover{
+    background-color: #76b3d6;
+    transition: all 0.8s ease;
+}
 
 @media (min-width: 1024px){
     main{
