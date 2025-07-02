@@ -46,25 +46,25 @@ function aumentarNumero(){
     if(pontosA == 0){
         pontA.style.transform = "scale(1)";
     }else if(pontosA == 11){
-        pontA.style.transform = "scale(1.4)";
+        pontA.style.transform = "scale(1.5)";
     }else if(pontosA >= 9){
-        pontA.style.transform = "scale(1.3)";
+        pontA.style.transform = "scale(1.4)";
     }else if(pontosA >= 6){
-        pontA.style.transform = "scale(1.2)";
+        pontA.style.transform = "scale(1.3)";
     }else if(pontosA >= 3){
-        pontA.style.transform = "scale(1.1)";
+        pontA.style.transform = "scale(1.2)";
     }
 
     if(pontosB == 0){
         pontB.style.transform = "scale(1)";
     }else if(pontosB == 11){
-        pontB.style.transform = "scale(1.4)";
+        pontB.style.transform = "scale(1.5)";
     }else if(pontosB >= 9){
-        pontB.style.transform = "scale(1.3)";
+        pontB.style.transform = "scale(1.4)";
     }else if(pontosB >= 6){
-        pontB.style.transform = "scale(1.2)";
+        pontB.style.transform = "scale(1.3)";
     }else if(pontosB >= 3){
-        pontB.style.transform = "scale(1.1)";
+        pontB.style.transform = "scale(1.2)";
     }
 }
 
