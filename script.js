@@ -147,7 +147,7 @@ function verificarVencedor(){
         pontB.style.color = "#5EABD6";
         pontosB = 0;
         pontosA = 0;
-        pontB.innerText = pontosB;
+        pontB.innerText = 0;
         totalA++;
         totalVitA.innerText = totalA + "🏆";
         totalVitA.style.fontWeight = "600";
@@ -161,7 +161,7 @@ function verificarVencedor(){
         pontB.style.color = "#5EABD6";
         pontosA = 0;
         pontosB = 0;
-        pontA.innerText = pontosA;
+        pontA.innerText = 0;
         totalB++;
         totalVitB.innerText = totalB + "🏆";
         totalVitB.style.fontWeight = "600";

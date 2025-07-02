@@ -14,7 +14,7 @@
 
     <main>
     <section id="nomeGrupos">
-        <h2>⮮ Nome dos Times ⮯</h2>
+        <h2>Nome dos Times</h2>
         <div class="formularioNomes">
             <form action="#" method="post" id="forms">
                 <input type="text" id="NomeTimeA" placeholder="Nome do Time A">
@@ -27,7 +27,16 @@
         <div id="containerPontuacoes">
             <div id="pontuacaoTimeA">
                 <h1 id="tituloA">Time A</h1>
-                <h1 id="pontuacaoA">0</h1>
+                <h1 id="pontuacaoA" style="display: none;">0</h1>
+
+                <div id="imagensA">
+                    <div id="imagemGanhouA" style="display: none;">
+                        <img src="./Ganhou.png" alt="Ganhou">
+                    </div>
+                    <div id="imagemPerdeuA">
+                        <img src="./Perdeu.png" alt="Perdeu">
+                    </div>
+                </div>
                 
                 <div id="addPontosA">
                     <button id="maisUmA">+1</button>
@@ -43,7 +52,16 @@
             
             <div id="pontuacaoTimeB">
                 <h1 id="tituloB">Time B</h1>
-                <h1 id="pontuacaoB">0</h1>
+                <h1 id="pontuacaoB" style="display: none;">0</h1>
+
+                <div id="imagensB">
+                    <div id="imagemGanhouB">
+                        <img src="./Ganhou.png" alt="Ganhou">
+                    </div>
+                    <div id="imagemPerdeuB" style="display: none;">
+                        <img src="./Perdeu.png" alt="Perdeu">
+                    </div>
+                </div>
                 
                 <div id="addPontosB">
                     <button id="maisUmB">+1</button>
