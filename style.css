@@ -29,7 +29,7 @@ header h1{
 #containerPontuacoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 8%;
+    margin-top: 10%;
     text-align: center;
     width: 100%;
 }
@@ -178,6 +178,7 @@ header h1{
     font-size: clamp(1.3em, 3vw, 1.5em);
     margin-top: 40px;
     box-shadow: 3px 3px 10px #6ebb8d67;
+    cursor: pointer;
 }
 
 #zerarVitoriasB{
@@ -192,6 +193,7 @@ header h1{
     font-size: clamp(1.3em, 3vw, 1.5em);
     margin-top: 40px;
     box-shadow: 3px 3px 10px #9fc9dd85;
+    cursor: pointer;
 }
 
 /* =-------------------------------= */
@@ -248,7 +250,7 @@ header h1{
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
     main{
         display: flex;
         flex-direction: column;
@@ -257,7 +259,7 @@ header h1{
     }
     
     #nomeGrupos{
-        width: 50vw;
+        width: 55vw;
         display: flex;
         justify-content: center;
     }
@@ -265,6 +267,15 @@ header h1{
 
     #containerPontuacoes{
         margin-top: 3%;
-        width: 50vw;
+        width: 55vw;
+        gap: 40px;
+    }
+
+    #pontuacaoTimeA{
+        border: 0;
+    }
+
+    #pontuacaoTimeB{
+        border: 0;
     }
 }

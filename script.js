@@ -119,13 +119,13 @@ btnZB.addEventListener("click", () => {
 
 zerarVitA.addEventListener("click", () => {
     totalA = 0;
-    totalVitA.innerText = "🏆: " + totalA;
+    totalVitA.innerText = totalA + "🏆" ;
     verificarPrimeiro();
 })
 
 zerarVitB.addEventListener("click", () => {
     totalB = 0;
-    totalVitB.innerText = "🏆: " + totalB;
+    totalVitB.innerText = totalB + "🏆";
     verificarPrimeiro();
 })
 
@@ -149,7 +149,7 @@ function verificarVencedor(){
         pontosA = 0;
         pontB.innerText = pontosB;
         totalA++;
-        totalVitA.innerText = "🏆: " + totalA;
+        totalVitA.innerText = totalA + "🏆";
         totalVitA.style.fontWeight = "600";
     }
     
@@ -163,21 +163,21 @@ function verificarVencedor(){
         pontosB = 0;
         pontA.innerText = pontosA;
         totalB++;
-        totalVitB.innerText = "Total de vitórias B: " + totalB;
+        totalVitB.innerText = totalB + "🏆";
         totalVitB.style.fontWeight = "600";
     }
 }
 
 function verificarPrimeiro(){
     if(totalA == totalB){
-        totalVitA.innerText = "🏆: " + totalA;
-        totalVitB.innerText = "🏆: " + totalB;
+        totalVitA.innerText = totalA + "🏆";
+        totalVitB.innerText = totalB + "🏆";
     }else if(totalA > totalB){
-        totalVitA.innerText = "🏆: " + totalA;
-        totalVitB.innerText = "🏆: " + totalB;
+        totalVitA.innerText = totalA + "🏆";
+        totalVitB.innerText = totalB + "🏆";
     }else{
-        totalVitA.innerText = "🏆: " + totalA;
-        totalVitB.innerText = "🏆: " + totalB;
+        totalVitA.innerText = totalA + "🏆";
+        totalVitB.innerText = totalB + "🏆";
     }
 }
 
