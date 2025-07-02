@@ -4,7 +4,7 @@
 
 ---
 
-<h1 align=center>SISTEMA DE PONTUIAÇÃO DO TRUCO</h1>
+<h1 align=center>SISTEMA DE PONTUAÇÃO DO TRUCO</h1>
 
 <p>Projeto somente para aprendizado, estou desenvolvendo apenas para recapitular e aprender novos conteúdos. Estou utilizando HTML e CSS para o estruturação e estilização da Página e Javascript como back-end</p>
 
