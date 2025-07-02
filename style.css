@@ -303,6 +303,47 @@ header h1{
     transition: all 0.8s ease;
 }
 
+#imagensA{
+    display: flex;
+    justify-content: center;
+}
+
+#imagemGanhouA{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.288);
+}
+
+#imagemGanhouA img{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#imagemPerdeuA{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.288);
+}
+
+#imagemPerdeuA img{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/* --- */
+
 #imagensB{
     display: flex;
     justify-content: center;
@@ -315,16 +356,32 @@ header h1{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.288);
 }
 
 #imagemGanhouB img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: center;
 }
 
+#imagemPerdeuB{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.288);
+}
 
+#imagemPerdeuB img{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
 
 
 @media (min-width: 1024px){
@@ -355,4 +412,24 @@ header h1{
     #pontuacaoTimeB{
         border: 0;
     }
+    
+    #imagemGanhouA{
+        width: 15vw;
+    }
+    
+    #imagemPerdeuA{
+        width: 15vw;
+    }
+    
+    /* --- */
+
+    #imagemGanhouB{
+        width: 15vw;
+    }
+    
+    #imagemPerdeuB{
+        width: 15vw;
+    
+    }
+
 }

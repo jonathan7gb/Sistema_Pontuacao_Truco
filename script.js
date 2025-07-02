@@ -10,6 +10,8 @@ const btnZA = document.getElementById("zerarA");
 const totalVitA = document.getElementById("totalVitoriasA");
 const zerarVitA = document.getElementById("zerarVitoriasA");
 const nomeTimeA = document.getElementById("NomeTimeA");
+const imagemGanhouA = document.getElementById("imagemGanhouA");
+const imagemPerdeuA = document.getElementById("imagemPerdeuA");
 var pontosA =  0;
 var totalA =  0;
 
@@ -25,6 +27,8 @@ const btnZB = document.getElementById("zerarB");
 const totalVitB = document.getElementById("totalVitoriasB");
 const zerarVitB = document.getElementById("zerarVitoriasB");
 const nomeTimeB = document.getElementById("NomeTimeB");
+const imagemGanhouB = document.getElementById("imagemGanhouB");
+const imagemPerdeuB = document.getElementById("imagemPerdeuB");
 var pontosB =  0;
 var totalB =  0;
 
@@ -136,35 +140,71 @@ function verificarVencedor(){
     pontB.style.color = "white";
     tituA.style.color = "#06923E";
     tituB.style.color = "#5EABD6";
-    pontA.style.fontSize = "3.2em";
-    pontB.style.fontSize = "3.2em";
+
     verificarPrimeiro();
     if(pontosA >= 12){
-        pontA.innerText = "+1🏆";
-        pontB.style.fontSize = "2.5em"
-        pontA.style.fontSize = "2.5em"
-        pontA.style.color = "#06923E";
-        pontB.style.color = "#5EABD6";
         pontosB = 0;
         pontosA = 0;
-        pontB.innerText = 0;
+        pontA.innerText = pontosA;
+        pontB.innerText = pontosB;
         totalA++;
         totalVitA.innerText = totalA + "🏆";
         totalVitA.style.fontWeight = "600";
+
+        imagemGanhouA.style.opacity = "1";
+        imagemPerdeuB.style.opacity = "1";
+        imagemGanhouA.style.display = "block";
+        imagemPerdeuB.style.display = "block";
+        pontA.style.display = "none";
+        pontB.style.display = "none";
+
+        setTimeout(() => {
+            imagemGanhouA.style.opacity = "0";
+            imagemPerdeuB.style.opacity = "0";
+            
+            setTimeout(() => {
+                pontA.innerText = pontosA;
+                pontB.innerText = pontosB;
+
+                imagemGanhouA.style.display = "none";
+                imagemPerdeuB.style.display = "none";
+                pontA.style.display = "block";
+                pontB.style.display = "block";
+            }, 500); 
+          }, 5000);
     }
     
     if(pontosB >= 12){
-        pontB.innerText = "+1🏆";
-        pontB.style.fontSize = "2.5em"
-        pontA.style.fontSize = "2.5em"
-        pontA.style.color = "#06923E";
-        pontB.style.color = "#5EABD6";
         pontosA = 0;
         pontosB = 0;
-        pontA.innerText = 0;
+        pontA.innerText = pontosA;
+        pontB.innerText = pontosB;
         totalB++;
         totalVitB.innerText = totalB + "🏆";
         totalVitB.style.fontWeight = "600";
+
+        imagemGanhouB.style.opacity = "1";
+        imagemPerdeuA.style.opacity = "1";
+        imagemGanhouB.style.display = "block";
+        imagemPerdeuA.style.display = "block";
+        pontB.style.display = "none";
+        pontA.style.display = "none";
+
+        setTimeout(() => {
+            imagemGanhouB.style.opacity = "0";
+            imagemPerdeuA.style.opacity = "0";
+            
+            setTimeout(() => {
+                pontA.innerText = pontosA;
+                pontB.innerText = pontosB;
+
+                imagemGanhouB.style.display = "none";
+                imagemPerdeuA.style.display = "none";
+                pontB.style.display = "block";
+                pontA.style.display = "block";
+            }, 500); 
+          }, 5000);
+
     }
 }
 
