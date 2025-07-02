@@ -164,13 +164,13 @@ btnZB.addEventListener("click", () => {
 
 zerarVitA.addEventListener("click", () => {
     totalA = 0;
-    totalVitA.innerText = totalA + "🏆" ;
+    totalVitA.innerText = totalA + " 🏆" ;
     verificarPrimeiro();
 })
 
 zerarVitB.addEventListener("click", () => {
     totalB = 0;
-    totalVitB.innerText = totalB + "🏆";
+    totalVitB.innerText = totalB + " 🏆";
     verificarPrimeiro();
 })
 
@@ -194,7 +194,7 @@ function verificarVencedor(){
         pontA.innerText = pontosA;
         pontB.innerText = pontosB;
         totalA++;
-        totalVitA.innerText = totalA + "🏆";
+        totalVitA.innerText = totalA + " 🏆";
         totalVitA.style.fontWeight = "600";
 
         imagemGanhouA.style.opacity = "1";
@@ -226,7 +226,7 @@ function verificarVencedor(){
         pontA.innerText = pontosA;
         pontB.innerText = pontosB;
         totalB++;
-        totalVitB.innerText = totalB + "🏆";
+        totalVitB.innerText = totalB + " 🏆";
         totalVitB.style.fontWeight = "600";
 
         imagemGanhouB.style.opacity = "1";
