@@ -42,6 +42,32 @@ const SalvarNomes = document.getElementById("SalvarNomes");
 const containerTema = document.getElementById("containerTema");
 bodyzao.style.backgroundColor = "black";
 
+function aumentarNumero(){
+    if(pontosA == 0){
+        pontA.style.transform = "scale(1)";
+    }else if(pontosA == 11){
+        pontA.style.transform = "scale(1.4)";
+    }else if(pontosA >= 9){
+        pontA.style.transform = "scale(1.3)";
+    }else if(pontosA >= 6){
+        pontA.style.transform = "scale(1.2)";
+    }else if(pontosA >= 3){
+        pontA.style.transform = "scale(1.1)";
+    }
+
+    if(pontosB == 0){
+        pontB.style.transform = "scale(1)";
+    }else if(pontosB == 11){
+        pontB.style.transform = "scale(1.4)";
+    }else if(pontosB >= 9){
+        pontB.style.transform = "scale(1.3)";
+    }else if(pontosB >= 6){
+        pontB.style.transform = "scale(1.2)";
+    }else if(pontosB >= 3){
+        pontB.style.transform = "scale(1.1)";
+    }
+}
+
 btnTema.addEventListener("click", () => {
     if(bodyzao.style.backgroundColor === "black"){
         bodyzao.style.backgroundColor = "white";
@@ -75,12 +101,12 @@ btnTema.addEventListener("click", () => {
     }
 });
 
-
 btnM1A.addEventListener("click", () => {
     pontosA++;
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM3A.addEventListener("click", () => {
@@ -88,6 +114,7 @@ btnM3A.addEventListener("click", () => {
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM6A.addEventListener("click", () => {
@@ -95,6 +122,7 @@ btnM6A.addEventListener("click", () => {
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM9A.addEventListener("click", () => {
@@ -102,6 +130,7 @@ btnM9A.addEventListener("click", () => {
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM12A.addEventListener("click", () => {
@@ -109,6 +138,7 @@ btnM12A.addEventListener("click", () => {
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnZA.addEventListener("click", () => {
@@ -116,6 +146,7 @@ btnZA.addEventListener("click", () => {
     pontA.innerText = pontosA;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 //--------------------
@@ -125,6 +156,7 @@ btnM1B.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM3B.addEventListener("click", () => {
@@ -132,6 +164,7 @@ btnM3B.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM6B.addEventListener("click", () => {
@@ -139,6 +172,7 @@ btnM6B.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM9B.addEventListener("click", () => {
@@ -146,6 +180,7 @@ btnM9B.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnM12B.addEventListener("click", () => {
@@ -153,6 +188,7 @@ btnM12B.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 btnZB.addEventListener("click", () => {
@@ -160,6 +196,7 @@ btnZB.addEventListener("click", () => {
     pontB.innerText = pontosB;
     verificarVencedor();
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 //---------------------
@@ -168,12 +205,14 @@ zerarVitA.addEventListener("click", () => {
     totalA = 0;
     totalVitA.innerText = totalA + " 🏆" ;
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 zerarVitB.addEventListener("click", () => {
     totalB = 0;
     totalVitB.innerText = totalB + " 🏆";
     verificarPrimeiro();
+    aumentarNumero();   
 })
 
 //----------------------
