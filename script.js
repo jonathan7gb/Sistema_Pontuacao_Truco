@@ -311,16 +311,37 @@ function verificarPrimeiro(){
 function atualizarTitulos(){
     if(nomeTimeA.value === ""){
         tituA.innerText = "Time A";
+        localStorage.removeItem("nomeTimeA");
     }else{
         tituA.innerText = nomeTimeA.value;
+        localStorage.setItem("nomeTimeA", nomeTimeA.value);
     }
     
     if(nomeTimeB.value === ""){
         tituB.innerText = "Time B";
+        localStorage.removeItem("nomeTimeB");
     }else{
         tituB.innerText = nomeTimeB.value;
+        localStorage.setItem("nomeTimeB", nomeTimeB.value);
     }
 }
+
+function carregarNomesSalvos() {
+    const nomeSalvoA = localStorage.getItem("nomeTimeA");
+    const nomeSalvoB = localStorage.getItem("nomeTimeB");
+
+    if (nomeSalvoA) {
+        tituA.innerText = nomeSalvoA;
+        nomeTimeA.value = nomeSalvoA;
+    }
+
+    if (nomeSalvoB) {
+        tituB.innerText = nomeSalvoB;
+        nomeTimeB.value = nomeSalvoB;
+    }
+}
+
+carregarNomesSalvos();
 
 document.getElementById("forms").addEventListener("submit", function(event) {
     event.preventDefault();
